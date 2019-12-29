@@ -5,20 +5,19 @@
     font-size: 12px;
     right: 0;
     padding: 13px;
-    text-transform: uppercase;
     color: white;
     border: 0;
     background-color: $primary;
     @include heading-font;
   }
   .navbar-brand {
-    color: $primary;
+    color: white;
     @include heading-font;
     &.active,
     &:active,
     &:focus,
     &:hover {
-      color: darken($primary, 10%);
+      color: $primary;
     }
   }
   .navbar-nav {
@@ -52,6 +51,16 @@
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
+      img {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        height: 56px;
+        margin: -28px 0;
+        margin-right: 2px;
+        position: relative;
+        top: -2px;
+      }
     }
     .navbar-nav {
       .nav-item {
@@ -67,6 +76,10 @@
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
+        img {
+          height: 40px;
+          margin: -20px 0;
+        }
       }
     }
   }
