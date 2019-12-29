@@ -39,4 +39,30 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // Magnific popup calls
+  $('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [1, 1]
+    },
+    image: {
+      tError: 'The image <a href="%url%">#%curr%</a> could not be loaded.',
+      titleSrc: function(item) {
+        return item.el.attr('title') || "Photo by <a href='https://www.kasparetter.com/' target='_blank'>Kaspar Etter</a>";
+      }
+    },
+    zoom: {
+      enabled: true,
+      duration: 300, // don't forget to change the duration also in CSS
+      opener: function(element) {
+        return element.find('img');
+      }
+    }
+  });
+
 })(jQuery); // End of use strict
