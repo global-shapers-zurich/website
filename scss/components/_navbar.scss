@@ -19,6 +19,13 @@
     &:hover {
       color: $primary;
     }
+    img {
+      height: 40px;
+      margin: -20px 0;
+      margin-right: 2px;
+      position: relative;
+      top: -2px;
+    }
   }
   .navbar-nav {
     .nav-item {

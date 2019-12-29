@@ -130,6 +130,14 @@ img::-moz-selection {
   color: #2859A9;
 }
 
+#mainNav .navbar-brand img {
+  height: 40px;
+  margin: -20px 0;
+  margin-right: 2px;
+  position: relative;
+  top: -2px;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 400;
