@@ -65,4 +65,9 @@
     }
   });
 
+  // https://stackoverflow.com/questions/17180621/jquery-scroll-to-top-of-bootstrap-modal
+  $('.modal').on('shown.bs.modal', function () {
+    $(this).animate({ scrollTop: 0 });
+  });
+
 })(jQuery); // End of use strict

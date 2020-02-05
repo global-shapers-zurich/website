@@ -1,5 +1,5 @@
-// Styling for the portfolio section
-#portfolio {
+// Styling for the projects section
+.portfolio {
   .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -9,36 +9,8 @@
       max-width: 400px;
       margin: 0 auto;
       cursor: pointer;
-      .portfolio-hover {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-transition: all ease 0.5s;
-        -moz-transition: all ease 0.5s;
-        transition: all ease 0.5s;
-        opacity: 0;
-        background: fade-out($primary, .1);
-        &:hover {
-          opacity: 1;
-        }
-        .portfolio-hover-content {
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          width: 100%;
-          height: 20px;
-          margin-top: -12px;
-          text-align: center;
-          color: white;
-          i {
-            margin-top: -12px;
-          }
-          h3,
-          h4 {
-            margin: 0;
-          }
-        }
-      }
+      text-decoration: none;
+      box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2);
     }
     .portfolio-caption {
       max-width: 400px;
@@ -62,8 +34,9 @@
     z-index: 2;
   }
 }
+
 @media(min-width:767px) {
-  #portfolio {
+  .portfolio {
     .portfolio-item {
       margin: 0 0 30px;
     }
@@ -76,19 +49,16 @@
     max-width: 100vw;
   }
   .modal-content {
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
     h2 {
       font-size: 3em;
       margin-bottom: 15px;
     }
-    p {
-      margin-bottom: 30px;
-    }
     p.item-intro {
       font-size: 16px;
       font-style: italic;
-      margin: 20px 0 30px;
+      margin: 0 0 30px;
       @include serif-font;
     }
     ul.list-inline {
@@ -106,8 +76,8 @@
     position: absolute;
     top: 25px;
     right: 25px;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     background-color: transparent;
     &:hover {
@@ -117,8 +87,8 @@
       /* Safari and Chrome */
       z-index: 1051;
       width: 1px;
-      height: 75px;
-      margin-left: 35px;
+      height: 50px;
+      margin-left: 20px;
       /* IE 9 */
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -128,7 +98,7 @@
         /* Safari and Chrome */
         z-index: 1052;
         width: 1px;
-        height: 75px;
+        height: 50px;
         /* IE 9 */
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
@@ -137,4 +107,12 @@
       }
     }
   }
+}
+
+@media(min-width:767px) {
+  .portfolio-modal {
+    .modal-dialog {
+      margin: 4rem;
+    }
+  }  
 }
