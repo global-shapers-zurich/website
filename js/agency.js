@@ -53,7 +53,7 @@
     image: {
       tError: 'The image <a href="%url%">#%curr%</a> could not be loaded.',
       titleSrc: function(item) {
-        return item.el.attr('title') || "Photo by <a href='https://www.kasparetter.com/'>Kaspar Etter</a>";
+        return item.el.attr('title');
       }
     },
     zoom: {

@@ -158,6 +158,7 @@ img::-moz-selection {
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
+    text-shadow: 0 0 4px #000;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -192,7 +193,8 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/gallery/high/IMG_4193.jpeg");
+  text-shadow: 0 0 6px #000;
+  background-image: url("../img/gallery/high/IMG_6201.jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
