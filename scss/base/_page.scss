@@ -4,8 +4,12 @@ body {
   @include body-font;
 }
 
-p {
+p, ul {
   line-height: 1.75;
+}
+
+ul {
+  margin-left: -20px;
 }
 
 a {
